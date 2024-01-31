@@ -65,6 +65,8 @@ class ArticleContainer extends StatelessWidget {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 // ハートアイコンといいね数
                 Column(

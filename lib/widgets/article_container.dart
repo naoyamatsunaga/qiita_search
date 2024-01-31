@@ -77,6 +77,24 @@ class ArticleContainer extends StatelessWidget {
                 ),
               ],
             ),
+            // 投稿者のアイコンと名前
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                CircleAvatar(
+                  radius: 26,
+                  backgroundImage: NetworkImage(article.user.profileImageUrl),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  article.user.id,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
       ),
     );
   }

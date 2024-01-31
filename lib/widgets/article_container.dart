@@ -41,6 +41,17 @@ class ArticleContainer extends StatelessWidget {
                 fontSize: 12,
               ),
             ),
+            // タイトル
+            Text(
+              article.title,
+              maxLines: 2, // 行数制限
+              overflow: TextOverflow.ellipsis, // 表示範囲超えた時の表示方法の設定
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
       ),
     );
   }

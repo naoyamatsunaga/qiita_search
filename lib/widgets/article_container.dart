@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:qiita_search/models/article.dart';
 
 class ArticleContainer extends StatelessWidget {
-  const ArticleContainer({super.key});
+  // コンストラクタ
+  const ArticleContainer({
+    super.key,
+    required this.article,
+  });
+
+  final Article article;
 
   @override
   Widget build(BuildContext context) {

@@ -52,6 +52,15 @@ class ArticleContainer extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            // タグ
+            Text(
+              '#${article.tags.join(' #')}', // ←文字列の配列をjoinで結合
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.white,
+                fontStyle: FontStyle.italic, // フォントスタイルを斜体に設定
+              ),
+            ),
       ),
     );
   }

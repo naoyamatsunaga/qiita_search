@@ -61,6 +61,22 @@ class ArticleContainer extends StatelessWidget {
                 fontStyle: FontStyle.italic, // フォントスタイルを斜体に設定
               ),
             ),
+            // ハートアイコンといいね数
+            Column(
+              children: [
+                const Icon(
+                  Icons.favorite, // ハートアイコン
+                  color: Colors.white,
+                ),
+                Text(
+                  article.likesCount.toString(),
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
       ),
     );
   }

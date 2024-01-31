@@ -33,6 +33,14 @@ class ArticleContainer extends StatelessWidget {
             Radius.circular(32),
           ),
         ),
+            // 投稿日
+            Text(
+              DateFormat("yyyy/MM/dd").format(article.createdAt),
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+              ),
+            ),
       ),
     );
   }
